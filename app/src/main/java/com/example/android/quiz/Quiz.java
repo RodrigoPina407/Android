@@ -14,12 +14,31 @@ import static android.R.attr.y;
 
 public class Quiz extends AppCompatActivity {
 
-    protected int q2 = 0; //question 2
+    int q2 = 0; //question 2
+
+    static final String VALUE_Q2 = "question 2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        if (savedInstanceState != null) {
+
+            q2 = savedInstanceState.getInt(VALUE_Q2);
+
+            TextView value = (TextView) findViewById(R.id.number);
+
+            value.setText(String.valueOf(q2));
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+
+        savedInstanceState.putInt(VALUE_Q2, q2);
+
+        super.onSaveInstanceState(savedInstanceState);
     }
 
     public void minus(View v) {

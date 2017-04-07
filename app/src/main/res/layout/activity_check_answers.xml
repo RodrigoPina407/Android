@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Answers"
+        android:text="@string/answers"
         android:textColor="@color/android_green"
         android:textSize="48sp" />
 

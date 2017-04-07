@@ -77,21 +77,21 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TopLayout" />
+                android:text="@string/toplayout" />
 
             <CheckBox
                 android:id="@+id/right"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="RightLayout" />
+                android:text="@string/rightlayout" />
 
             <CheckBox
                 android:id="@+id/center"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1.2"
-                android:text="CenterLayout" />
+                android:text="@string/centerlayout" />
         </LinearLayout>
 
         <TextView
@@ -100,7 +100,7 @@
             android:layout_gravity="center"
             android:layout_marginBottom="2dp"
             android:layout_marginTop="32dp"
-            android:text="2. How many are Views?"
+            android:text="@string/_2_how_many_are_views"
             android:textColor="@color/android_green"
             android:textSize="18sp" />
 
@@ -149,7 +149,7 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="32dp"
             android:gravity="center"
-            android:text="3. Are TextView and ImageView, ViewGroups?"
+            android:text="@string/_3_are_textview_and_imageview_viewgroups"
             android:textColor="@color/android_green"
             android:textSize="18sp" />
 
@@ -185,7 +185,7 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="32dp"
             android:gravity="center"
-            android:text="4. What view is used to create an editable Text field?"
+            android:text="@string/_4_what_view_is_used_to_create_an_editable_text_field"
             android:textColor="@color/android_green"
             android:textSize="18sp" />
 
